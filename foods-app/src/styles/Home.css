@@ -1,0 +1,95 @@
+/* Home Page Styles */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0078d4; /* Matches the primary color */
+}
+
+/* Add Menu Section */
+.add-menu-container {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+.add-menu-container input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.add-menu-container button {
+  padding: 12px 20px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-menu-container button:hover {
+  background-color: #005a9e;
+}
+
+/* Random Menu Section */
+.random-menu-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.random-menu-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.random-menu-button {
+  padding: 10px 15px;
+  background-color: #7d7d7d;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.random-menu-button:hover {
+  background-color: #6975fa;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-menu-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .random-menu-buttons {
+    gap: 5px;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+}

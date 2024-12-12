@@ -1,0 +1,65 @@
+/* Main Roulette Container */
+.roulette-container {
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Roulette Figure */
+  .roulette-figure {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Pointer at 3 o'clock */
+  .roulette-figure::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    transform: translate(-50%, -50%) rotate(0deg);
+    border-radius: 5px;
+    z-index: 10;
+  }
+  
+  /* Spin Button */
+  button {
+    background: #0078d4;
+    color: white;
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #005a9e;
+  }
+  
+  button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .roulette-container {
+      padding: 0 16px;
+    }
+  
+    button {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+  }
+  
